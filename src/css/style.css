@@ -1,0 +1,96 @@
+body{
+    background-color: #00B96D;
+    color: white;
+    height: 100vh;
+    font-family: 'VT323', monospace;
+    padding: 20px;
+}
+
+body::after{
+    content: '';
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 100%;    
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0.4;
+    background-image: url(../imagens/backgroundwackylittle.png);
+    background-size: 150px;
+}
+
+.selecao-de-personagens{
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 1fr;
+    gap: 20px;
+}
+
+.lista-de-personagens, .lista-de-personagensB{  
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 20px;
+}
+
+.personagem, .personagemB{
+    /* background-color: rgba(44, 44, 175, 0.3); */
+    border-radius: 10px;
+    cursor: pointer;
+    border: 2px solid white;
+}
+
+.personagem{
+    background-color: rgba(40, 89, 67, .7);
+}
+
+.personagemB{
+    background-color: rgba(0, 20, 39, 0.7);
+}
+
+.personagem:hover{
+    border: 2px solid #433e0e;
+}
+
+.personagemB:hover{
+    border: 2px solid #226CE0;
+}
+
+.personagem-grande{
+    position: relative;
+
+}
+
+.personagem-grande.personagem-jogador-2 img{
+    transform: rotateY(180deg);
+}
+
+.personagem-grande img{
+    position: absolute;
+    bottom: 0;
+    z-index: 33;
+    animation: shaking 700ms infinite alternate linear;
+}
+
+.personagem-grande span{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 30px;
+    border-radius: 50%;
+    transform: translatey(40%);
+    background-color:  rgba(0, 75, 83, 0.7);
+    animation: pulse 700ms infinite linear alternate;
+    
+}
+
+.nome{
+    font-size: 45px;
+    width: fit-content;
+    margin: 0 auto;
+    text-shadow: 3px 3px  #001427;
+}
+
+.selecionado, .selecionadoB{
+    transform:  scale(1.2);
+}

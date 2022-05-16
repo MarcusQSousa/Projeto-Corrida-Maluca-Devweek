@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escolha seu Personagem</title> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./src/css/reset.css" />      
+    <link rel="stylesheet" href="./src/css/animacoes.css" />
+    <link rel="stylesheet" href="./src/css/style.css">       
+    <link rel="stylesheet" href="./src/css/responsivo.css">
+</head>
+<body>
+    <main>
+        <div class="selecao-de-personagens">
+            <div class="selecao-player-1">
+                
+                <ul class="lista-de-personagens">
+        
+                    <li class="personagem selecionado" value="equipePavor" data-name="Irmãos Pavor">
+                        <span class="tag">1P</span>
+                        <img src="./src/imagens/pavorQuadrado.png" alt="Irmãos Pavor">
+                    </li>
+                    
+                    <li class="personagem" value="equipeProfessor"   data-name="Professor Aéreo">
+                        <span class="tag">1P</span>
+                        <img src="./src/imagens/ProfQuadrado.png" alt="Professor Aéreo">
+                    </li>
+
+                    <li class="personagem" value="equipeBVermelho"   data-name="Barão Vermelho">
+                        <span class="tag">1P</span>
+                        <img src="./src/imagens/baronQuadrado.png" alt="Barão Vermelho">
+                    </li>
+
+                    <li class="personagem" value="equipeCharmosa"   data-name="Penelope Charmosa">
+                        <span class="tag">1P</span>
+                        <img src="./src/imagens/charmosaQuadrado.png" alt="Penelope Charmosa">
+                    </li>
+
+                    <li class="personagem" value="equipeBombada"   data-name="Recruta e Sgt. Bombada">
+                        <span class="tag">1P</span>
+                        <img src="./src/imagens/sgtQuadrado.png" alt="Recruta e Sgt. Bombada">
+                    </li>
+
+                    <li class="personagem " value="equipeQuadrilha"   data-name="Quadrilha de Morte">
+                        <span class="tag">1P</span>
+                        <img src="./src/imagens/quadrilhaQuadrado.png" alt="Quadrilha de Morte">
+                    </li>
+
+                    <li class="personagem" value="equipePeter"   data-name="Peter Perfeito">
+                        <span class="tag">1P</span>
+                        <img src="./src/imagens/peterQuadrado.png" alt="Peter Perfeito">
+                    </li>
+
+                    <li class="personagem" value="equipeVigarista"   data-name="Mutley e D. Vigarista">
+                        <span class="tag">1P</span>
+                        <img src="./src/imagens/vigaristaQuadrado.png" alt="Mutley e D. Vigarista">
+                    </li>
+                    
+                </ul>
+            </div>
+
+            <div class="personagem-grande personagem-jogador-1">
+                <div class="nome">
+                    <h2 id="nome-jogador-1">Irmãos Pavor</h2>
+                </div>
+                <img src="./src/imagens/equipePavor.png" alt="Personagem selecionado jogador 1" id="personagem-jogador-1">
+                <span></span>
+            </div>
+
+        
+            <div class="personagem-grande personagem-jogador-2">
+                <div class="nome">
+                    <h2 id="nome-jogador-2">D. Vigarista</h2>
+                </div>
+
+                <img src="./src/imagens/equipeVigarista.png" alt="Personagem selecionado jogador 2" id="personagem-jogador-2">
+                <span></span>
+            </div>
+            
+            <div class="selecao-player-2">
+
+                <ul class="lista-de-personagensB">
+        
+                    <li class="personagemB" value="equipePavor" data-name="Irmãos Pavor">
+                        <span class="tag">2P</span>
+                        <img src="./src/imagens/pavorQuadrado.png" alt="Irmãos Pavor">
+                    </li>
+                    
+                    <li class="personagemB" value="equipeProfessor" data-name="Professor Aéreo">
+                        <span class="tag">2P</span>
+                        <img src="./src/imagens/ProfQuadrado.png" alt="Professor Aéreo">
+                    </li>
+
+                    <li class="personagemB" value="equipeBVermelho" data-name="Barão Vermelho">
+                        <span class="tag">2P</span>
+                        <img src="./src/imagens/baronQuadrado.png" alt="Barão Vermelho">
+                    </li>
+
+                    <li class="personagemB" value="equipeCharmosa" data-name="Penelope Charmosa">
+                        <span class="tag">2P</span>
+                        <img src="./src/imagens/charmosaQuadrado.png" alt="Penelope Charmosa">
+                    </li>
+
+                    <li class="personagemB" value="equipeBombada" data-name="Recruta e Sgt. Bombada">
+                        <span class="tag">2P</span>
+                        <img src="./src/imagens/sgtQuadrado.png" alt="Recruta e Sgt. Bombada">
+                    </li>
+
+                    <li class="personagemB " value="equipeQuadrilha" data-name="Quadrilha de Morte">
+                        <span class="tag">2P</span>
+                        <img src="./src/imagens/quadrilhaQuadrado.png" alt="Quadrilha de Morte">
+                    </li>
+
+                    <li class="personagemB" value="equipePeter" data-name="Peter Perfeito">
+                        <span class="tag">2P</span>
+                        <img src="./src/imagens/peterQuadrado.png" alt="Peter Perfeito">
+                    </li>
+
+                    <li class="personagemB selecionadoB" value="equipeVigarista" data-name="Mutley e D. Vigarista">
+                        <span class="tag">2P</span>
+                        <img src="./src/imagens/vigaristaQuadrado.png" alt="Mutley e D. Vigarista">
+                    </li>
+                    
+                </ul>
+            </div>
+            
+            
+        </div>
+    </main>
+
+
+    <script src="./src/js/index.js"></script>
+</body>
+</html>

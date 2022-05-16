@@ -1,0 +1,25 @@
+
+
+@keyframes shaking{
+  0%{
+    rotate: 1deg;
+      
+  }
+
+  to {
+    rotate: -1deg;
+  }
+
+  
+}
+
+@keyframes pulse{
+  0%{
+    scale: 1;
+  }
+
+  to {
+    scale: 1.02;
+  }
+}
+  
