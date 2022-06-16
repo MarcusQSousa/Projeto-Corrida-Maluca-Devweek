@@ -1,15 +1,11 @@
-
-
 const personagensP1 = document.querySelectorAll(".personagem");
+const personagensP2 = document.querySelectorAll(".personagemB");
 
 personagensP1.forEach((personagemP1) => {
   personagemP1.addEventListener("click", () => {
 
     const p1ValueSelected = personagemP1.attributes.value.value;
     console.log(p1ValueSelected)
-
-    // if(idSelecionado === 'equipeVigarista') return;
-
     const personagemSelecionado = document.querySelector(".selecionado");
     personagemSelecionado.classList.remove("selecionado");
 
@@ -26,7 +22,7 @@ personagensP1.forEach((personagemP1) => {
 });
 
 
-const personagensP2 = document.querySelectorAll(".personagemB");
+
 
 personagensP2.forEach((personagemP2) => {
   personagemP2.addEventListener("click", () => {

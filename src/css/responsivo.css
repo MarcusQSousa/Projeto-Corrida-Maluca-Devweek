@@ -1,0 +1,24 @@
+@media (max-width: 1200px) {
+
+ 
+    .selecao-de-personagens{
+        grid-template-columns: 2fr 2fr;
+        grid-template-rows: 2fr 1fr;
+        gap: 50px 20px;
+        height: fit-content;
+    }
+
+    .lista-de-personagens, .lista-de-personagensB{  
+        display: grid;
+        grid-template-columns: repeat(4, auto);
+        gap: 20px;
+    }
+
+    .personagem-jogador-1{
+        grid-area: 1/1/2/1;
+    }
+
+    .personagem-jogador-2{
+        grid-area: 1/2/2/2;
+    }
+}

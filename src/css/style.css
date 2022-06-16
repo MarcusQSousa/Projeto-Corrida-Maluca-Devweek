@@ -33,7 +33,6 @@ body::after{
 }
 
 .personagem, .personagemB{
-    /* background-color: rgba(44, 44, 175, 0.3); */
     border-radius: 10px;
     cursor: pointer;
     border: 2px solid white;
